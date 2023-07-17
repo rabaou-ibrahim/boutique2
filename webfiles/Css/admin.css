@@ -1,0 +1,415 @@
+@font-face {
+    font-family: 'San Francisco';
+    src: url('../Font/otf/SFNSDisplay-Regular.otf');
+}
+
+body {
+    position: 0;
+    height: 100%;
+    font-family: 'San Francisco';
+}
+
+header {
+    background-color: rgb(217, 217, 217);
+    padding: 3.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+    header .header-btn {
+        background-color: rgb(120, 174, 191);
+        border-radius: 5px;
+        padding: 2%;
+        height: 50%;
+        align-self: center;
+        text-align: center;
+        border: none;
+        font-size: x-large;
+    }
+    header .header-btn:hover {
+        cursor: pointer;
+        background-color: rgba(120, 174, 191, 0.5);
+    }
+    header .header-btn a {
+        color: white;
+        text-decoration: none;
+    }
+    header .header-round-btn {
+        background-color: rgb(120, 174, 191);
+        padding: 4% 3%;
+        border-radius: 50%;
+        border: none;
+        font-size: larger;
+    }
+    header .header-round-btn:hover {
+        cursor: pointer;
+        background-color: rgba(120, 174, 191, 0.5);
+    }
+    header .header-round-btn a {
+        color: white;
+        text-decoration: none;
+    }
+    
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container aside {
+    margin-left: 0;
+    background-color: rgb(38, 56, 72);
+    color: white;
+    width: 25%;
+    font-size: x-large;
+    align-items: flex-end;
+}
+
+.container aside h3 {
+    font-weight: 500;
+    height: auto;
+}
+
+.container aside .user-img {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: auto;
+}
+
+.container aside .admin {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.container aside .admin .admin-title{
+    display: flex;
+    flex-direction: column;
+}
+
+.container aside .admin .button-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container aside .admin .button-icons button{
+    width: 47%;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.container aside button{
+    border-radius: 5px;
+    width: 15%;
+    height: 19%;
+    background-color: rgb(120, 174, 191);
+    color: white;
+}
+
+.container aside .admin h3{
+    text-align: center;
+}
+
+.container aside .admin-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container aside .admin-buttons .dashboard-btn{
+    margin-top: 3%;
+    border-radius: 5px;
+    width: 95%;
+    padding: 3%;
+    background-color: rgb(66, 109, 124);
+    cursor: pointer;
+    font-size: x-large;
+}
+
+.container aside .admin-buttons .profile-btn{
+    margin-top: 1%;
+    border-radius: 5px;
+    padding: 3%;
+    width: 95%;
+    background-color: rgb(104, 120, 84);
+    cursor: pointer;
+    font-size: x-large;
+}
+
+.container aside .admin-buttons .users-btn{
+    text-decoration: none;
+    color: white;
+    margin-top: 1%;
+    border-radius: 5px;
+    padding: 3%;
+    width: 95%;
+    background-color: rgb(129, 63, 127);
+    cursor: pointer;
+    font-size: x-large;
+    margin-bottom: 3%;
+}
+    .container aside .admin-buttons .users-btn a{
+        text-decoration: none;
+        color: white;
+    }
+
+section {
+    margin-top: -2.1%;
+    width: 75%;
+}
+
+section .items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    margin-bottom: -3%;
+}
+
+section .items .items-number-shirt{
+    padding: 4% 4%;
+    background-color: rgb(180, 233, 230);
+    width: 25%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+section .items .items-number-jean{
+    padding: 4% 4%;
+    background-color: rgb(152,238,181);
+    width: 25%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+section .items .items-number-veste{
+    padding: 4% 4%;
+    background-color: rgb(255, 112, 112);
+    width: 25%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+section .bar {
+    background-color: rgb(120, 174, 191);
+    padding: 1% 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section .bar p {
+    color: white;
+    font-size: larger;
+}
+
+section .bar input {
+    height: 30px;
+    background-color: rgb(217, 217, 217);
+    border: none;
+    border-radius: 5%;
+    align-self: center;
+}
+
+/* section .bar .export-btn {
+    border: none;
+    width: 10%;
+    border-radius: 5px;
+    align-self: center;
+    background-color: rgb(74, 108, 124);
+    color: white;
+    cursor: pointer;
+}
+
+section .bar .export-btn:hover {
+    cursor: pointer;
+    background-color: rgba(74, 108, 124, 0.5);
+} */
+
+section .bar a .add-btn {
+    width: 150%;
+    border: none;
+    border-radius: 5px;
+    align-self: center;
+    background-color: rgb(96, 204, 154);
+    color: white;
+    cursor: pointer;
+}
+
+section .bar a .add-btn:hover {
+    cursor: pointer;
+    background-color: rgba(96, 204, 154, 0.5);
+}
+
+.table {
+    width: 100%;
+    padding: 2% 1%;
+}  
+
+.table .table-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: x-large;
+} 
+
+.table .table-content .table-content-text {
+    text-decoration: underline;
+} 
+
+.table .table-options {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.table .table-content td .view-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: x-large;
+    text-decoration: none;
+    background-color: rgb(88, 151, 165);
+    color: white;
+    cursor: pointer;
+} 
+
+.table .table-content td a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+} 
+
+.table .table-content td .edit-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: x-large;
+    text-decoration: none;
+    background-color: rgb(151, 166, 93);
+    color: white;
+    cursor: pointer;
+}
+
+.table .table-content .delete-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: x-large;
+    text-decoration: none;
+    background-color: rgb(255, 112, 112);
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(217, 217, 217);
+    padding: 3.5%;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: x-large;
+}
+
+.view {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.display-product-img {
+    display: flex;
+    align-self: center;
+}
+
+.display-product {
+    display: flex;
+    align-self: center;
+}
+
+.display-return {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: x-large;
+    text-decoration: none;
+    background-color: rgb(255, 112, 112);
+    color: white;
+    cursor: pointer;
+}
+
+.display-return a{
+    color: white;
+    text-decoration: none;
+}
+
+#alert {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3px 3px;
+    background-color: aquamarine;
+    text-align: center;
+    font-size: large;
+}
+
+#msg-alert {
+    color: black;
+}
+
+#close-alert{
+    padding: 0.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+    text-decoration: none;
+    background-color: rgb(255, 112, 112);
+    color: white;
+    cursor: pointer;
+}
+
+#close-alert :hover{
+    color: white;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .pagination li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .pagination a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    color: #333;
+  }
+  .pagination .active a {
+    background-color: #333;
+    color: #fff;
+  }

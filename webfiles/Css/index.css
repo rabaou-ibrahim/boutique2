@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'San Francisco';
+    src: url('../Font/otf/SFNSDisplay-Regular.otf');
+}
+
+body {
+    position: 0;
+    height: 100%;
+    font-family: 'San Francisco';
+}
+
+header {
+    background-color: rgb(217, 217, 217);
+    padding: 3.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+    header .header-btn {
+        background-color: rgb(120, 174, 191);
+        border-radius: 5px;
+        padding: 2%;
+        height: 50%;
+        align-self: center;
+        text-align: center;
+        border: none;
+        font-size: x-large;
+    }
+    header .header-btn:hover {
+        cursor: pointer;
+        background-color: rgba(120, 174, 191, 0.5);
+    }
+    header .header-btn a {
+        color: white;
+        text-decoration: none;
+    }
+    header .header-round-btn {
+        background-color: rgb(120, 174, 191);
+        padding: 4% 3%;
+        border-radius: 50%;
+        border: none;
+        font-size: larger;
+    }
+    header .header-round-btn:hover {
+        cursor: pointer;
+        background-color: rgba(120, 174, 191, 0.5);
+    }
+    header .header-round-btn a {
+        color: white;
+        text-decoration: none;
+    }
+    header .profile-btn {
+        background-color: rgb(120, 174, 191);
+        border-radius: 5px;
+        padding: 2%;
+        height: 50%;
+        align-self: left;
+        text-align: left;
+        border: none;
+        font-size: x-large;
+    }
+    
+    header .cart-btn {
+        background-color: rgb(120, 174, 191);
+        border-radius: 5px;
+        padding: 2%;
+        height: 50%;
+        align-self: left;
+        text-align: left;
+        border: none;
+        font-size: x-large;
+    }
+    header .shop-btn {
+        background-color: rgb(120, 174, 191);
+        border-radius: 5px;
+        padding: 2%;
+        height: 50%;
+        align-self: left;
+        text-align: left;
+        border: none;
+        font-size: x-large;
+    }
+    header .clock-btn {
+        background-color: rgb(120, 174, 191);
+        border-radius: 5px;
+        padding: 2%;
+        height: 50%;
+        align-self: left;
+        text-align: left;
+        border: none;
+        font-size: x-large;
+    }
+    header .logout-btn {
+        background-color: rgb(120, 174, 191);
+        border-radius: 5px;
+        padding: 2%;
+        height: 50%;
+        align-self: left;
+        text-align: left;
+        border: none;
+        font-size: x-large;
+    }
+    header button {
+        position: relative;
+        display: inline-block;
+    }
+    header button:hover {
+        cursor: pointer;
+        background-color: rgba(120, 174, 191, 0.5);
+    }
+    
+    header button .tooltip-text {
+        visibility: hidden;
+        background-color: rgba(120, 174, 191, 1);
+        color: white;
+        text-align: center;
+        padding: 3px;
+        position: absolute;
+        z-index: 1;
+        bottom: -40%;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        font-size: large;
+    }
+      
+    header button:hover .tooltip-text {
+        visibility: visible;
+    } 
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    margin-top: -2.1%;
+    width: 100%;
+}
+
+section .items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    margin-bottom: -2.2%;
+}
+
+section .items .items-number-shirt{
+    padding: 4% 4%;
+    background-color: rgb(180, 233, 230);
+    width: 25%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+section .items .items-number-jean{
+    padding: 4% 4%;
+    background-color: rgb(152,238,181);
+    width: 25%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+section .items .items-number-veste{
+    padding: 4% 4%;
+    background-color: rgb(255, 112, 112);
+    width: 25%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+section .bar {
+    background-color: rgb(120, 174, 191);
+    padding: 1% 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 4px rgba(158, 155, 155, 0.1);
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+/* section .bar .export-btn {
+    border: none;
+    width: 10%;
+    border-radius: 5px;
+    align-self: center;
+    background-color: rgb(74, 108, 124);
+    color: white;
+    cursor: pointer;
+}
+
+section .bar .export-btn:hover {
+    cursor: pointer;
+    background-color: rgba(74, 108, 124, 0.5);
+} */
+
+section .bar a .add-btn {
+    width: 150%;
+    border: none;
+    border-radius: 5px;
+    align-self: center;
+    background-color: rgb(96, 204, 154);
+    color: white;
+    cursor: pointer;
+}
+
+section .bar a .add-btn:hover {
+    cursor: pointer;
+    background-color: rgba(96, 204, 154, 0.5);
+}
+
+.table {
+    width: 100%;
+    padding: 2% 1%;
+}  
+
+.table .table-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: x-large;
+} 
+
+.table .table-content .table-content-text {
+    text-decoration: underline;
+} 
+
+.table .table-options {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.table .table-content td a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+} 
+
+.table .table-content .view-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: x-large;
+    text-decoration: none;
+    background-color: rgb(88, 151, 165);
+    color: white;
+    cursor: pointer;
+}
+
+
+.table .table-content .delete-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: x-large;
+    text-decoration: none;
+    background-color: rgb(255, 112, 112);
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(217, 217, 217);
+    padding: 3.5%;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: x-large;
+}

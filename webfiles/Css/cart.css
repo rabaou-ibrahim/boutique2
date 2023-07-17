@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'San Francisco';
+    src: url('../Font/otf/SFNSDisplay-Regular.otf');
+}
+
+body {
+    position: 0;
+    height: 100%;
+    font-family: 'San Francisco';
+}
+
+header {
+    background-color: rgb(217, 217, 217);
+    padding: 3.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+header .profile-btn {
+    background-color: rgb(120, 174, 191);
+    border-radius: 5px;
+    padding: 2%;
+    height: 50%;
+    align-self: left;
+    text-align: left;
+    border: none;
+    font-size: x-large;
+}
+
+header .cart-btn {
+    background-color: rgb(120, 174, 191);
+    border-radius: 5px;
+    padding: 2%;
+    height: 50%;
+    align-self: left;
+    text-align: left;
+    border: none;
+    font-size: x-large;
+}
+
+.round-btn {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.item-count {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    padding: 2px 4px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+  }
+
+header .shop-btn {
+    background-color: rgb(120, 174, 191);
+    border-radius: 5px;
+    padding: 2%;
+    height: 50%;
+    align-self: left;
+    text-align: left;
+    border: none;
+    font-size: x-large;
+}
+header .clock-btn {
+    background-color: rgb(120, 174, 191);
+    border-radius: 5px;
+    padding: 2%;
+    height: 50%;
+    align-self: left;
+    text-align: left;
+    border: none;
+    font-size: x-large;
+}
+header .logout-btn {
+    background-color: rgb(120, 174, 191);
+    border-radius: 5px;
+    padding: 2%;
+    height: 50%;
+    align-self: left;
+    text-align: left;
+    border: none;
+    font-size: x-large;
+}
+header button {
+    position: relative;
+    display: inline-block;
+}
+header button:hover {
+    cursor: pointer;
+    background-color: rgba(120, 174, 191, 0.5);
+}
+
+header button .tooltip-text {
+    visibility: hidden;
+    background-color: rgba(120, 174, 191, 1);
+    color: white;
+    text-align: center;
+    padding: 3px;
+    position: absolute;
+    z-index: 1;
+    bottom: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: large;
+}
+  
+header button:hover .tooltip-text {
+    visibility: visible;
+}
+
+h2{
+    text-align: center;
+    color: red;
+}
+
+.display-return {
+    display: flex;
+    align-self: center;
+    font-size: x-large;
+    text-decoration: none;
+    background-color: rgb(255, 112, 112);
+    color: white;
+    cursor: pointer;
+    width: auto;
+}
+
+.display-return a{
+    color: white;
+    text-decoration: none;
+}
+
+/* General styles */
+body {
+    background-color: rgb(217, 217, 217);
+  }
+  
+  .cart-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  h2 {
+    color: rgb(120, 174, 191);
+    margin-bottom: 20px;
+  }
+  
+  .cart-items {
+    margin-bottom: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(120, 174, 191, 0.1);
+  }
+  
+  .cart-item img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+  .cart-item-description {
+    flex-grow: 1;
+  }
+  
+  .cart-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .product {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.product::before {
+    content: "";
+    width: 80%;
+    height: 1px;
+    background-color: #000;
+}
+
+.product-content {
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    margin-right: 100px;
+}
+
+.product-image img {
+    display: block;
+    margin: auto;
+}
+
+.product-details {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-actions {
+    display: flex;
+    margin-left: 40%;
+    gap: 40px;
+}
+
+
+  .buy-btn {
+    background-color: rgb(88, 151, 165);
+    display: flex;
+    align-self: center;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    width: auto;
+  }
+
+  .delete-btn {
+    background-color: rgb(255, 112, 112);
+    display: flex;
+    align-self: center;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    width: auto;
+  }
+
+  .delete-all-btn {
+    background-color: rgb(255, 112, 112);
+    display: flex;
+    align-self: center;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    width: auto;
+  }
+
+footer {
+    background-color: rgb(217, 217, 217);
+    padding: 3.5%;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: x-large;
+}

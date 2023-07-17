@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'San Francisco';
+    src: url('../Font/otf/SFNSDisplay-Regular.otf');
+}
+
+body {
+    position: 0;
+    height: 100%;
+    font-family: 'San Francisco';
+}
+header {
+    background-color: rgb(217, 217, 217);
+    padding: 3.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+header .profile-btn {
+    background-color: rgb(120, 174, 191);
+    border-radius: 5px;
+    padding: 2%;
+    height: 50%;
+    align-self: left;
+    text-align: left;
+    border: none;
+    font-size: x-large;
+}
+
+header .cart-btn {
+    background-color: rgb(120, 174, 191);
+    border-radius: 5px;
+    padding: 2%;
+    height: 50%;
+    align-self: left;
+    text-align: left;
+    border: none;
+    font-size: x-large;
+}
+header .shop-btn {
+    background-color: rgb(120, 174, 191);
+    border-radius: 5px;
+    padding: 2%;
+    height: 50%;
+    align-self: left;
+    text-align: left;
+    border: none;
+    font-size: x-large;
+}
+header .clock-btn {
+    background-color: rgb(120, 174, 191);
+    border-radius: 5px;
+    padding: 2%;
+    height: 50%;
+    align-self: left;
+    text-align: left;
+    border: none;
+    font-size: x-large;
+}
+header .logout-btn {
+    background-color: rgb(120, 174, 191);
+    border-radius: 5px;
+    padding: 2%;
+    height: 50%;
+    align-self: left;
+    text-align: left;
+    border: none;
+    font-size: x-large;
+}
+header button {
+    position: relative;
+    display: inline-block;
+}
+header button:hover {
+    cursor: pointer;
+    background-color: rgba(120, 174, 191, 0.5);
+}
+
+header button .tooltip-text {
+    visibility: hidden;
+    background-color: rgba(120, 174, 191, 1);
+    color: white;
+    text-align: center;
+    padding: 3px;
+    position: absolute;
+    z-index: 1;
+    bottom: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: large;
+}
+  
+header button:hover .tooltip-text {
+    visibility: visible;
+} 
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 70%;
+    width: 70%;
+    
+}
+
+.welcome-msg{
+    text-align: center;
+    color: green;
+}
+
+.shop-block{
+    background-color: white;
+    height: 100%;
+    width: 50%;
+}
+
+.shop-block .image-preview {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.shop-block .text-articles{
+    display: flex;
+    justify-content: center;
+}
+
+.shop-block button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-style: none;
+    padding: 1% 1%;
+    background-color: red;
+    color: white;
+}
+
+.shop-block button:hover{
+    background-color: rgba(255, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.purchases-block{
+    background-color: rgb(217, 217, 217);
+    height: 50%;
+    width: 33%;
+}
+
+.purchases-block button{
+    border-style: none;
+    padding: 1% 1%;
+    background-color: red;
+    color: white;
+}
+
+
+.purchases-block button:hover{
+    background-color: rgba(255, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(217, 217, 217);
+    padding: 3.5%;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: x-large;
+}

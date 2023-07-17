@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'San Francisco';
+    src: url('../Font/otf/SFNSDisplay-Regular.otf');
+}
+
+body {
+    position: 0;
+    height: 100%;
+    font-family: 'San Francisco';
+}
+
+header {
+    background-color: rgb(217, 217, 217);
+    padding: 3.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+    header .header-btn {
+        background-color: rgb(120, 174, 191);
+        border-radius: 5px;
+        padding: 2%;
+        height: 50%;
+        align-self: center;
+        text-align: center;
+        border: none;
+        font-size: x-large;
+        width: 15%;
+    }
+    header .header-btn:hover {
+        cursor: pointer;
+        background-color: rgba(120, 174, 191, 0.5);
+    }
+    header .header-btn a {
+        color: white;
+        text-decoration: none;
+    }
+    header .header-round-btn {
+        background-color: rgb(120, 174, 191);
+        padding: 4% 3%;
+        border-radius: 50%;
+        border: none;
+        font-size: larger;
+        width: 15%;
+    }
+    header .header-round-btn:hover {
+        cursor: pointer;
+        background-color: rgba(120, 174, 191, 0.5);
+    }
+    header .header-round-btn a {
+        color: white;
+        text-decoration: none;
+    }
+    
+
+h3 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(217, 217, 217);
+    width: 80%;
+    height: 80%;
+    border-radius: 1px;
+    border: none;
+    margin-bottom: 5%;
+}
+
+form input {
+    margin: 2%;
+    display: flex;
+}
+
+form label {
+    margin: 2%;
+    display: flex;
+}
+
+.label-image {
+    display: flex;
+}
+
+button {
+    margin: 2%;
+    width: 10%;
+}
+
+.display-return {
+    display: flex;
+    align-self: center;
+    font-size: x-large;
+    text-decoration: none;
+    background-color: rgb(255, 112, 112);
+    color: white;
+    cursor: pointer;
+    width: auto;
+}
+
+.display-return a{
+    color: white;
+    text-decoration: none;
+}
+
+.view-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.img-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#alert {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3px 3px;
+    background-color: aquamarine;
+    text-align: center;
+    font-size: large;
+}
+
+#msg-alert {
+    color: black;
+}
+
+label {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc; 
+    padding: 4% 5%;
+}
+
+input[type="text"], input[type="password"], input[type="number"], input[type="file"], textarea {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc; 
+    padding: 5% 7%;
+    font-weight: bolder;
+    word-spacing: 1%;
+}
+
+label{
+    word-spacing: 1%;
+}
+
+#form-btn {
+    border-style: none;
+    padding: 1% 1%;
+    background-color: red;
+    color: white;
+}
+#form-btn:hover{
+    background-color: rgba(255, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+#message a{
+    text-decoration: none;
+    color: black;
+}
+
+#close-alert{
+    padding: 0.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+    text-decoration: none;
+    background-color: rgb(255, 112, 112);
+    color: white;
+    cursor: pointer;
+}
+
+#close-alert :hover{
+    color: white;
+}
+
+.registration-message{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 1%;
+}
+
+.log-message{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 1%;
+}
+
+.edit-message{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 1%;
+}
+
+.warning-msg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+footer {
+    background-color: rgb(217, 217, 217);
+    padding: 3.5%;
+}
+    
+    footer ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+        font-size: x-large;
+    }
