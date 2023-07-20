@@ -261,6 +261,7 @@ const updateItemCount = (count) => {
   ItemCount.textContent = count.toString();
 };
 
+
 const addProductToCart = (productId, price) => {
   fetch('http://localhost/boutique2/user/ac', {
     method: 'POST',
@@ -292,10 +293,13 @@ window.addEventListener('load', () => {
   checkUserCartItems();
 });
 
-Array.from(BookmarkBtns).forEach(btn => {
-  btn.addEventListener('click', () => {
-    const productId = btn.dataset.productId;
-    const price = btn.dataset.price;
+BookmarkBtns.forEach(btn => {
+  btn.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent the default form submission.
+    const form = event.target.closest('form'); // Get the closest parent form element.
+    const productId = form.querySelector('input[name="productId"]').value;
+    const price = form.querySelector('input[name="price"]').value;
     addProductToCart(productId, price);
+    window.location = 'http://localhost/boutique2/user/s'
   });
 });

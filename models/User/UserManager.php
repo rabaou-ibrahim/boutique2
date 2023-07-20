@@ -41,9 +41,12 @@ class UserManager extends Model{
             }
         }
     }
-    public function getUserByUsername($username) {
+    public function getUserByUsernameOrEmail($username, $email) {
         foreach ($this->users as $user) {
             if ($user->getUsername() === $username) {
+                return $user;
+            }
+            else if ($user->getEmail() === $email) {
                 return $user;
             }
         }

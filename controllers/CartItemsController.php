@@ -23,23 +23,30 @@ class CartsItemsController{
 
     public function addProductToCartItems() {
 
+      $productId = $_POST['productId'];
+      $quantity = $_POST['quantity'];
+      $price = $_POST['price'];
       $cart = $this->cartManager->getCartbyUserId($_SESSION['id']);
 
-      if ((empty($cart))){
+      if (!$cart){
         $this->cartManager->registerCartDb($_SESSION['id']);
+        $cart = $this->cartManager->getCartbyUserId($_SESSION['id']);
+        $cartId = $cart->getCartId();
+        $this->cartItemsManager->addItemToCart($cartId, $productId, $quantity, $price);
+        $response = [
+            'success' => true,
+            'cartId' => $cart,
+        ];
       }
-    
-      $cartId = $cart->getCartId();
-      $productId = htmlspecialchars($_POST['productId']);
-      $quantity = htmlspecialchars($_POST['quantity']);
-      $price = htmlspecialchars($_POST['price']);
 
-      $this->cartItemsManager->addItemToCart($cartId, $productId, $quantity, $price);
-
-      $response = [
-          'success' => true,
-          'cartId' => $cart,
-      ];
+      else {
+        $cartId = $cart->getCartId();
+        $this->cartItemsManager->addItemToCart($cartId, $productId, $quantity, $price);
+        $response = [
+            'success' => true,
+            'cartId' => $cart,
+        ];
+      }
 
       header('Content-Type: application/json');
       echo json_encode($response);

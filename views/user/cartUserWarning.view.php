@@ -25,8 +25,8 @@
         <button class="clock-btn"><a href="h"><img src = 'http://localhost/boutique2/webfiles/img/user/time.png' width="40px" height="40px"><span class="tooltip-text">Mon historique</span></a></button>
         <button class="logout-btn"><a href="http://localhost/boutique2/user/lo"><img src = 'http://localhost/boutique2/webfiles/img/user/power-on.png' width="40px" height="40px"><span class="tooltip-text">Me déconnecter</span></a></button>
     </header>
-<button class="display-return"><a href="http://localhost/boutique2/user/s">Retour</a></button>
+<button class="display-shop"><a href="http://localhost/boutique2/user/s">Boutique</a></button>
     <div class="warning-msg">
-        <p>Pour accéder à votre panier. Veuillez ajouter des produits via la boutique</p>
+        <p>Vous n'avez toujours pas ajouté de produits dans votre panier. Veuillez ajouter des produits via la boutique</p>
     </div>
 </body>

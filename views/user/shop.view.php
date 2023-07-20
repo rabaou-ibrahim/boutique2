@@ -25,7 +25,7 @@
 </head>
 <body>
     <header>
-        <button class="profile-btn"><a href="http://localhost/boutique2/user/p/<?= $_SESSION['id'] ?>"><img src = 'http://localhost/boutique2/webfiles/img/user/user.png' width="40px" height="40px"><span class="tooltip-text">Mon profil</span></a></button>
+        <button class="profile-btn"><a href="http://localhost/boutique2/user/e/<?= $_SESSION['id'] ?>"><img src = 'http://localhost/boutique2/webfiles/img/user/user.png' width="40px" height="40px"><span class="tooltip-text">Mon profil</span></a></button>
         <button class="cart-btn"><a href="<?php $cartId = $cartManager->getCartIdbyUserId($_SESSION['id']); if ($cartId === null) { echo 'http://localhost/boutique2/user/wc'; } else { echo 'http://localhost/boutique2/user/c/' . $cartId; } ?>"><img src = 'http://localhost/boutique2/webfiles/img/user/shopping-cart.png' width="40px" height="40px"><span class="tooltip-text">Mon panier</span><span class="round-btn" id="round-btn"></span><span class="item-count" id="item-count">0</span></a></button>
         <button class="shop-btn"><a href="http://localhost/boutique2/user/s"><img src = 'http://localhost/boutique2/webfiles/img/user/shop.png' width="40px" height="40px"><span class="tooltip-text">Boutique</span></a></button>
         <button class="clock-btn"><a href="h"><img src = 'http://localhost/boutique2/webfiles/img/user/time.png' width="40px" height="40px"><span class="tooltip-text">Mon historique</span></a></button>

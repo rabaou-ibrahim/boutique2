@@ -25,11 +25,11 @@
             </div>
             <div class="form-group">
                 <label for="username">Pseudo ou Email :</label>
-                <input type="text" class="form-control" id="username" name="username" autocomplete="off">
+                <input type="text" class="form-control" id="username" name="username" autocomplete="off" placeholder="Pseudo ou Email">
             </div>
             <div class="form-group">
                 <label for="password">Mot de passe :</label>
-                <input type="password" class="form-control" id="password" name="password" autocomplete="off">
+                <input type="password" class="form-control" id="password" name="password" autocomplete="off" placeholder="Mot de passe">
             </div>
             <button id="form-btn" type="submit" class="btn btn-primary">Valider</button>
             <div id="message">Pas encore inscrit ? <a href="<?= URL ?>user/r"><b> Inscrivez-vous. </b></a></div> 

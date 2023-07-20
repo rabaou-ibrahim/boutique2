@@ -143,9 +143,9 @@ class UsersController {
                 'success' => true,
                 'message' => "Connexion établie !"
             ];
-            $_SESSION['username'] = htmlspecialchars($_POST['username']);
-            $loadedUser = $this->userManager->getUserByUsername($_SESSION['username']);
+            $loadedUser = $this->userManager->getUserByUsernameOrEmail($_POST['username'], $_POST['username']);
             $_SESSION['id'] = $loadedUser->getId();
+            $_SESSION['username'] = $loadedUser->getUsername();
         } else {
             $responseLogData = [
                 'success' => false,
