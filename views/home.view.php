@@ -6,56 +6,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/boutique2/webfiles/Css/index.css">
-    <title>Accueil</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./webfiles/Css/index.css">
 </head>
-<body>
-    <header>
-        <button class="header-btn"><a href="user/r">Inscription</a></button>
-        <button class="header-btn"><a href="user/l">Connexion</a></button>
-        <button class="header-btn"><a href="admin/l">Admin</a></button>
-    </header>
-    <div class="container">
 
-        <section>
-            <div class="items">
-                <h3 class="items-number-shirt">T-shirts <?= $productManager->loadOccurences("T-shirt"); ?> </h3>
-                <h3 class="items-number-jean">Jeans <?= $productManager->loadOccurences("Jean"); ?> </h3>
-                <h3 class="items-number-veste">Vestes <?= $productManager->loadOccurences("Veste"); ?> </h3>
-            </div>
-            <div class="bar">
-                <input type="text" placeholder="Recherche...">
-            </div>
-            <?php 
-            $products = $productManager->getProducts();
-            for($i=0; $i < count($products); $i++) : ?>
-            <table class="table">
-                <tr class="table-content">
-                    <div class="table-content-text">
-                    <td><img src = 'http://localhost/boutique2/webfiles/img/shop/<?= $products[$i]->getImage() ?>' width="80px"></td>
-                    <td><?= $products[$i]->getName() ?></td>
-                    <td><?= $products[$i]->getPrice() ?>€</td>
+<body>
+    <nav>
+        <input type="checkbox" id="nav-toggle">
+        <div class="logo">SHOP</div>
+            <ul class="links">
+                <li><a href="<?= URL ?>admin/l">Admin</a></li>
+                <li><a href="<?= URL ?>user/r">Inscription</a></li>
+                <li><a href="<?= URL ?>user/l">Connexion</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+    </nav>
+
+    <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </label>
+
+    <div class="container">
+        <h2 class="container-title">Nos produits</h2>
+        <div class="container-card" id="container-card">
+            <!-- <div class="card">
+                <div class="imgBx">
+                    <img src="webfiles/img/shop/n6.png" alt="n6">
+                </div>
+
+                <div class="contentBx">
+
+                    <h2>Nom du produit</h2>
+
+                    <div class="price">
+                        <h3>Prix :</h3>
                     </div>
-                    <div class="table-options">
-                        <td><a href="<?= URL ?>user/v/<?= $products[$i]->getId() ?>"><button class="view-btn">Détails</button></td></a>
-                    </div>
-                </tr>
-                <?php endfor; ?>
-            </table>
-        </section>
+
+                    <a href="#">Buy Now</a>
+                </div>
+            </div> -->
+        </div>
     </div>
 
-    <footer>
-        <ul>
-            <li>contacts</li>
-            <li>service client</li>
-            <li>newsletter</li>
-            <li>résaux</li>
-        </ul>
-    </footer>
-
 </body>
+<script src="/boutique2/Js/user/home.js"></script>
 </html>

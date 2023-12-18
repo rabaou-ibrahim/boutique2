@@ -56,6 +56,8 @@ try{
                         $userController->displayCartWarning();
                     } else if($url[1] === "p"){
                         $userController->displayProfile();
+                    } else if($url[1] === "gp"){
+                        $productController->getAllProductsJson();
                     } else if($url[1] === "gc"){
                         $cartController->getUserCart();
                     } else if($url[1] === "ac"){
